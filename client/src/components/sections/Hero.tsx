@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 
 export function Hero() {
   return (
@@ -31,12 +32,16 @@ export function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="rounded-full px-8 text-base bg-white text-black hover:bg-white/90 h-12">
-              Start Planning
-            </Button>
-            <Button variant="outline" size="lg" className="rounded-full px-8 text-base border-white/20 text-white hover:bg-white/10 h-12 group">
-              View Portfolio <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <Link href="/contact">
+              <Button size="lg" className="rounded-full px-8 text-base bg-white text-black hover:bg-white/90 h-12">
+                Start Planning
+              </Button>
+            </Link>
+            <Link href="/portfolio">
+              <Button variant="outline" size="lg" className="rounded-full px-8 text-base border-white/20 text-white hover:bg-white/10 h-12 group">
+                View Portfolio <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
           </div>
         </motion.div>
       </div>

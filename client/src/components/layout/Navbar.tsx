@@ -17,9 +17,9 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Services", href: "#services" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "About", href: "#about" },
+    { name: "Services", href: "/services" },
+    { name: "Portfolio", href: "/portfolio" },
+    { name: "About", href: "/about" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -39,13 +39,11 @@ export function Navbar() {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-sm font-medium text-white/80 hover:text-white transition-colors"
-            >
-              {link.name}
-            </a>
+            <Link key={link.name} href={link.href}>
+              <a className="text-sm font-medium text-white/80 hover:text-white transition-colors">
+                {link.name}
+              </a>
+            </Link>
           ))}
           <Button className="bg-white text-black hover:bg-white/90 font-semibold rounded-full px-6">
             Book Event
@@ -71,14 +69,14 @@ export function Navbar() {
             className="absolute top-full left-0 right-0 bg-black/95 border-b border-white/10 p-6 md:hidden flex flex-col gap-4"
           >
             {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg font-medium text-white/80 hover:text-white"
-              >
-                {link.name}
-              </a>
+              <Link key={link.name} href={link.href}>
+                 <a
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-lg font-medium text-white/80 hover:text-white"
+                >
+                  {link.name}
+                </a>
+              </Link>
             ))}
             <Button className="w-full bg-primary text-white hover:bg-primary/90">
               Book Event
