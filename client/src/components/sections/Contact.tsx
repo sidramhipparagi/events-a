@@ -9,7 +9,7 @@ export function Contact() {
       {/* Background Gradient */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/20 blur-[120px] rounded-full opacity-20 pointer-events-none" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-8 md:px-16 lg:px-24 relative z-10">
         <div className="max-w-4xl mx-auto glass-card rounded-3xl p-8 md:p-12 overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>

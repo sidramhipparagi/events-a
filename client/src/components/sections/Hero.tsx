@@ -13,49 +13,24 @@ export function Hero() {
         {/* Animated noise texture could go here */}
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 text-center">
+      <div className="container mx-auto px-8 md:px-16 lg:px-24 relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <span className="inline-block py-1 px-3 rounded-full bg-foreground/5 border border-foreground/10 text-xs font-medium tracking-widest uppercase text-primary mb-6">
-            Premium Event Management
+          <span className="text-black text-sm md:text-base font-medium tracking-widest uppercase mb-6">
+            EVENT MANAGEMENT
           </span>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight text-foreground mb-6 leading-tight">
             Crafting Moments <br />
             <span className="text-gradient-primary">Beyond Imagination</span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-            From intimate traditional gatherings to massive corporate spectacles. 
-            We design experiences that leave a lasting imprint.
-          </p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/contact">
-              <Button size="lg" className="rounded-full px-8 text-base bg-primary text-primary-foreground hover:bg-primary/90 h-12">
-                Start Planning
-              </Button>
-            </Link>
-            <Link href="/portfolio">
-              <Button variant="outline" size="lg" className="rounded-full px-8 text-base border-foreground/20 text-foreground hover:bg-foreground/10 h-12 group">
-                View Portfolio <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </Link>
-          </div>
+          
+          
         </motion.div>
       </div>
-      
-      {/* Scroll Indicator */}
-      <motion.div 
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-foreground/30"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-      >
-        <div className="w-6 h-10 border-2 border-current rounded-full flex justify-center p-2">
-          <div className="w-1 h-1 bg-current rounded-full" />
-        </div>
-      </motion.div>
     </section>
   );
 }

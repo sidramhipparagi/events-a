@@ -11,7 +11,7 @@ export default function Home() {
         <Hero />
         <Services />
         <section className="py-24 bg-foreground/5 border-y border-foreground/5">
-          <div className="container mx-auto px-6 text-center">
+          <div className="container mx-auto px-8 md:px-16 lg:px-24 text-center">
             <h2 className="text-2xl md:text-3xl font-display font-light italic text-foreground/80 max-w-4xl mx-auto leading-relaxed">
               "Lumina transformed our annual summit into a breathtaking experience. Their attention to detail and creative vision are simply unmatched in the industry."
             </h2>
@@ -25,7 +25,7 @@ export default function Home() {
       </main>
       
       <footer className="py-12 border-t border-border bg-background">
-        <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="container mx-auto px-8 md:px-16 lg:px-24 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-muted-foreground text-sm">© 2024 Lumina Events. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Instagram</a>

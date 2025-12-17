@@ -11,7 +11,7 @@ export default function AboutPage() {
              {/* Background Gradient */}
             <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 blur-[120px] rounded-full opacity-30 pointer-events-none" />
 
-          <div className="container mx-auto px-6">
+          <div className="container mx-auto px-8 md:px-16 lg:px-24">
             <div className="max-w-4xl mx-auto text-center mb-20">
                <span className="inline-block py-1 px-3 rounded-full bg-foreground/5 border border-foreground/10 text-xs font-medium tracking-widest uppercase text-primary mb-6">
                 Who We Are
@@ -68,7 +68,7 @@ export default function AboutPage() {
       </main>
       
       <footer className="py-12 border-t border-border bg-background">
-        <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="container mx-auto px-8 md:px-16 lg:px-24 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-muted-foreground text-sm">© 2024 Lumina Events. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Instagram</a>

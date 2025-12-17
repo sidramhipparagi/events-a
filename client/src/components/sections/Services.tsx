@@ -39,7 +39,7 @@ const services = [
 export function Services() {
   return (
     <section id="services" className="py-24 bg-background relative z-10">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div>
             <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-4">Our Expertise</h2>
@@ -60,7 +60,7 @@ export function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className={`group relative h-[400px] rounded-2xl overflow-hidden cursor-pointer ${service.colSpan}`}
+              className={`group relative h-[400px] rounded-lg overflow-hidden cursor-pointer ${service.colSpan}`}
             >
               <img
                 src={service.image}

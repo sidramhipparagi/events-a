@@ -31,7 +31,7 @@ export function Navbar() {
         isScrolled ? "bg-background/80 backdrop-blur-md border-b border-border py-4" : "bg-transparent py-6"
       }`}
     >
-      <div className="container mx-auto px-6 flex items-center justify-between">
+      <div className="container mx-auto px-8 md:px-16 lg:px-24 flex items-center justify-between">
         <Link href="/">
           <a className="text-2xl font-display font-bold tracking-tighter text-foreground">
             LUMINA<span className="text-primary">.</span>
@@ -54,8 +54,11 @@ export function Navbar() {
             </Link>
           ))}
           <ThemeToggle />
-          <Button className="bg-primary text-black hover:bg-primary/90 font-semibold rounded-full px-6">
-            Book Event
+          <Button
+            variant="ghost"
+            className="text-sm font-medium text-black hover:text-gray-600 px-0 h-auto"
+          >
+            BOOK EVENT
           </Button>
         </div>
 
@@ -94,7 +97,7 @@ export function Navbar() {
                 </a>
               </Link>
             ))}
-            <Button className="w-full bg-primary text-black hover:bg-primary/90">
+            <Button className="w-full bg-transparent text-black hover:bg-transparent hover:text-gray-600">
               Book Event
             </Button>
           </motion.div>

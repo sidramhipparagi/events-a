@@ -57,7 +57,7 @@ export default function PortfolioPage() {
       <Navbar />
       <main className="pt-24">
         <section className="py-12 md:py-24">
-          <div className="container mx-auto px-6 mb-16 text-center">
+          <div className="container mx-auto px-8 md:px-16 lg:px-24 mb-16 text-center">
              <span className="inline-block py-1 px-3 rounded-full bg-foreground/5 border border-foreground/10 text-xs font-medium tracking-widest uppercase text-primary mb-6">
                 Our Work
               </span>
@@ -69,7 +69,7 @@ export default function PortfolioPage() {
             </p>
           </div>
 
-          <div className="container mx-auto px-6">
+          <div className="container mx-auto px-8 md:px-16 lg:px-24">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {portfolioItems.map((item, index) => (
                 <motion.div
@@ -104,7 +104,7 @@ export default function PortfolioPage() {
       </main>
       
       <footer className="py-12 border-t border-border bg-background">
-        <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="container mx-auto px-8 md:px-16 lg:px-24 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-muted-foreground text-sm">© 2024 Lumina Events. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Instagram</a>
