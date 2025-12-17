@@ -58,10 +58,10 @@ export default function PortfolioPage() {
       <main className="pt-24">
         <section className="py-12 md:py-24">
           <div className="container mx-auto px-6 mb-16 text-center">
-             <span className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-xs font-medium tracking-widest uppercase text-primary mb-6">
+             <span className="inline-block py-1 px-3 rounded-full bg-foreground/5 border border-foreground/10 text-xs font-medium tracking-widest uppercase text-primary mb-6">
                 Our Work
               </span>
-            <h1 className="text-4xl md:text-6xl font-display font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground mb-6">
               Selected <span className="text-gradient-primary">Projects</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -91,7 +91,7 @@ export default function PortfolioPage() {
                   <div className="flex justify-between items-start">
                     <div>
                         <span className="text-primary text-xs font-bold uppercase tracking-wider mb-1 block">{item.category}</span>
-                        <h3 className="text-xl font-display font-bold text-white group-hover:text-primary transition-colors">{item.title}</h3>
+                        <h3 className="text-xl font-display font-bold text-foreground group-hover:text-primary transition-colors">{item.title}</h3>
                         <p className="text-sm text-muted-foreground mt-1">{item.description}</p>
                     </div>
                   </div>
@@ -103,13 +103,13 @@ export default function PortfolioPage() {
         <Contact />
       </main>
       
-      <footer className="py-12 border-t border-white/10 bg-black">
+      <footer className="py-12 border-t border-border bg-background">
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-white/40 text-sm">© 2024 Lumina Events. All rights reserved.</p>
+          <p className="text-muted-foreground text-sm">© 2024 Lumina Events. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="text-white/40 hover:text-white transition-colors">Instagram</a>
-            <a href="#" className="text-white/40 hover:text-white transition-colors">LinkedIn</a>
-            <a href="#" className="text-white/40 hover:text-white transition-colors">Twitter</a>
+            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Instagram</a>
+            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">LinkedIn</a>
+            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Twitter</a>
           </div>
         </div>
       </footer>

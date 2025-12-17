@@ -13,10 +13,10 @@ export default function AboutPage() {
 
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center mb-20">
-               <span className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-xs font-medium tracking-widest uppercase text-primary mb-6">
+               <span className="inline-block py-1 px-3 rounded-full bg-foreground/5 border border-foreground/10 text-xs font-medium tracking-widest uppercase text-primary mb-6">
                 Who We Are
               </span>
-              <h1 className="text-4xl md:text-6xl font-display font-bold text-white mb-8">
+              <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground mb-8">
                 Architects of <span className="text-gradient-primary">Experience</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
@@ -39,14 +39,14 @@ export default function AboutPage() {
                         className="glass-card p-8 rounded-2xl text-center"
                     >
                         <h3 className="text-5xl font-display font-bold text-primary mb-2">{stat.number}</h3>
-                        <p className="text-white/60 font-medium">{stat.label}</p>
+                        <p className="text-foreground/60 font-medium">{stat.label}</p>
                     </motion.div>
                 ))}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
                 <div className="order-2 md:order-1">
-                     <h2 className="text-3xl font-display font-bold text-white mb-6">Our Philosophy</h2>
+                     <h2 className="text-3xl font-display font-bold text-foreground mb-6">Our Philosophy</h2>
                      <p className="text-muted-foreground mb-6 leading-relaxed">
                          We don't believe in templates. Every client has a unique story, and our job is to tell it through immersive design, lighting, sound, and spatial arrangement.
                      </p>
@@ -54,10 +54,10 @@ export default function AboutPage() {
                          From the initial sketch to the final curtain call, our team of designers, producers, and technicians work in unison to ensure perfection.
                      </p>
                 </div>
-                <div className="order-1 md:order-2 h-[400px] bg-white/5 rounded-3xl overflow-hidden relative group">
+                <div className="order-1 md:order-2 h-[400px] bg-foreground/5 rounded-3xl overflow-hidden relative group">
                     <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent opacity-50" />
                      {/* Placeholder for team/office image */}
-                    <div className="absolute inset-0 flex items-center justify-center text-white/20 font-display text-2xl font-bold">
+                    <div className="absolute inset-0 flex items-center justify-center text-foreground/20 font-display text-2xl font-bold">
                         Lumina Studio
                     </div>
                 </div>
@@ -67,13 +67,13 @@ export default function AboutPage() {
         <Contact />
       </main>
       
-      <footer className="py-12 border-t border-white/10 bg-black">
+      <footer className="py-12 border-t border-border bg-background">
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-white/40 text-sm">© 2024 Lumina Events. All rights reserved.</p>
+          <p className="text-muted-foreground text-sm">© 2024 Lumina Events. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="text-white/40 hover:text-white transition-colors">Instagram</a>
-            <a href="#" className="text-white/40 hover:text-white transition-colors">LinkedIn</a>
-            <a href="#" className="text-white/40 hover:text-white transition-colors">Twitter</a>
+            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Instagram</a>
+            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">LinkedIn</a>
+            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Twitter</a>
           </div>
         </div>
       </footer>

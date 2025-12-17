@@ -19,10 +19,10 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <span className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-xs font-medium tracking-widest uppercase text-primary mb-6">
+          <span className="inline-block py-1 px-3 rounded-full bg-foreground/5 border border-foreground/10 text-xs font-medium tracking-widest uppercase text-primary mb-6">
             Premium Event Management
           </span>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight text-white mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight text-foreground mb-6 leading-tight">
             Crafting Moments <br />
             <span className="text-gradient-primary">Beyond Imagination</span>
           </h1>
@@ -33,12 +33,12 @@ export function Hero() {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/contact">
-              <Button size="lg" className="rounded-full px-8 text-base bg-white text-black hover:bg-white/90 h-12">
+              <Button size="lg" className="rounded-full px-8 text-base bg-primary text-primary-foreground hover:bg-primary/90 h-12">
                 Start Planning
               </Button>
             </Link>
             <Link href="/portfolio">
-              <Button variant="outline" size="lg" className="rounded-full px-8 text-base border-white/20 text-white hover:bg-white/10 h-12 group">
+              <Button variant="outline" size="lg" className="rounded-full px-8 text-base border-foreground/20 text-foreground hover:bg-foreground/10 h-12 group">
                 View Portfolio <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
@@ -48,7 +48,7 @@ export function Hero() {
       
       {/* Scroll Indicator */}
       <motion.div 
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/30"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-foreground/30"
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >

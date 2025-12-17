@@ -10,27 +10,27 @@ export default function Home() {
       <main>
         <Hero />
         <Services />
-        <section className="py-24 bg-white/5 border-y border-white/5">
+        <section className="py-24 bg-foreground/5 border-y border-foreground/5">
           <div className="container mx-auto px-6 text-center">
-            <h2 className="text-2xl md:text-3xl font-display font-light italic text-white/80 max-w-4xl mx-auto leading-relaxed">
+            <h2 className="text-2xl md:text-3xl font-display font-light italic text-foreground/80 max-w-4xl mx-auto leading-relaxed">
               "Lumina transformed our annual summit into a breathtaking experience. Their attention to detail and creative vision are simply unmatched in the industry."
             </h2>
             <div className="mt-8">
-              <p className="font-semibold text-white">Sarah Jenkins</p>
-              <p className="text-sm text-white/50">CMO, TechGlobal Inc.</p>
+              <p className="font-semibold text-foreground">Sarah Jenkins</p>
+              <p className="text-sm text-muted-foreground">CMO, TechGlobal Inc.</p>
             </div>
           </div>
         </section>
         <Contact />
       </main>
       
-      <footer className="py-12 border-t border-white/10 bg-black">
+      <footer className="py-12 border-t border-border bg-background">
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-white/40 text-sm">© 2024 Lumina Events. All rights reserved.</p>
+          <p className="text-muted-foreground text-sm">© 2024 Lumina Events. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="text-white/40 hover:text-white transition-colors">Instagram</a>
-            <a href="#" className="text-white/40 hover:text-white transition-colors">LinkedIn</a>
-            <a href="#" className="text-white/40 hover:text-white transition-colors">Twitter</a>
+            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Instagram</a>
+            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">LinkedIn</a>
+            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Twitter</a>
           </div>
         </div>
       </footer>
