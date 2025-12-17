@@ -39,13 +39,20 @@ jobs:
       - name: Create 404.html for SPA routing
         run: cp dist/public/index.html dist/public/404.html
 
+      - name: List build output
+        run: |
+          echo "Contents of dist/public:"
+          ls -la dist/public
+          echo "Contents of index.html:"
+          head -20 dist/public/index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist/public'
+          path: 'dist/public'
 
   deploy:
     environment:
