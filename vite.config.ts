@@ -5,13 +5,8 @@ import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 import { metaImagesPlugin } from "./vite-plugin-meta-images";
 
-const base =
-  process.env.VITE_BASE && process.env.VITE_BASE !== "/"
-    ? process.env.VITE_BASE
-    : "/";
-
 export default defineConfig({
-  base,
+  base: process.env.VITE_BASE || "/",
   plugins: [
     react(),
     runtimeErrorOverlay(),
