@@ -1,4 +1,4 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, Router } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { ThemeProvider } from "next-themes";
@@ -10,15 +10,20 @@ import ServicesPage from "@/pages/services";
 import PortfolioPage from "@/pages/portfolio";
 import AboutPage from "@/pages/about";
 
-function Router() {
+// Get base path from environment or default to "/"
+const base = import.meta.env.BASE_URL || "/";
+
+function AppRouter() {
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/services" component={ServicesPage} />
-      <Route path="/portfolio" component={PortfolioPage} />
-      <Route path="/about" component={AboutPage} />
-      <Route component={NotFound} />
-    </Switch>
+    <Router base={base}>
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/services" component={ServicesPage} />
+        <Route path="/portfolio" component={PortfolioPage} />
+        <Route path="/about" component={AboutPage} />
+        <Route component={NotFound} />
+      </Switch>
+    </Router>
   );
 }
 
@@ -28,7 +33,7 @@ function App() {
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <AppRouter />
         </TooltipProvider>
       </ThemeProvider>
     </QueryClientProvider>
