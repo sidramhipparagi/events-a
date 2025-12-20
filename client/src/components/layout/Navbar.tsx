@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function Navbar() {
@@ -34,7 +33,7 @@ export function Navbar() {
       <div className="container mx-auto px-8 md:px-16 lg:px-24 flex items-center justify-between">
         <Link href="/">
           <a className="text-2xl font-display font-bold tracking-tighter text-foreground">
-            LUMINA<span className="text-primary">.</span>
+            EVENTS<span className="text-primary">.</span>
           </a>
         </Link>
 
@@ -53,7 +52,6 @@ export function Navbar() {
               </a>
             </Link>
           ))}
-          <ThemeToggle />
           <Button
             variant="ghost"
             className="text-sm font-medium text-black hover:text-gray-600 px-0 h-auto"
@@ -64,7 +62,6 @@ export function Navbar() {
 
         {/* Mobile Toggle */}
         <div className="md:hidden flex items-center gap-4">
-          <ThemeToggle />
           <button
             className="text-black"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
