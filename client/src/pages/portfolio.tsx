@@ -1,5 +1,4 @@
 import { Navbar } from "@/components/layout/Navbar";
-import { Contact } from "@/components/sections/Contact";
 import { motion } from "framer-motion";
 import corporateImg from "@assets/stock_images/modern_corporate_eve_9508c83f.jpg";
 import traditionalImg from "@assets/stock_images/luxury_traditional_i_dd2df4b0.jpg";
@@ -100,7 +99,6 @@ export default function PortfolioPage() {
             </div>
           </div>
         </section>
-        <Contact />
       </main>
       
       <footer className="py-12 border-t border-border bg-background">

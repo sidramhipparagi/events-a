@@ -1,5 +1,4 @@
 import { Navbar } from "@/components/layout/Navbar";
-import { Contact } from "@/components/sections/Contact";
 import { motion } from "framer-motion";
 
 export default function AboutPage() {
@@ -64,7 +63,6 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-        <Contact />
       </main>
       
       <footer className="py-12 border-t border-border bg-background">

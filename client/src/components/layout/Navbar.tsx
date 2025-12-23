@@ -21,7 +21,6 @@ export function Navbar() {
     { name: "SERVICES", href: "/services" },
     { name: "PORTFOLIO", href: "/portfolio" },
     { name: "ABOUT", href: "/about" },
-    { name: "CONTACT", href: "#contact" },
   ];
 
   return (
@@ -33,7 +32,7 @@ export function Navbar() {
       <div className="container mx-auto px-8 md:px-16 lg:px-24 flex items-center justify-between">
         <Link href="/">
           <a className="text-2xl font-display font-bold tracking-tighter text-foreground">
-            EVENTS<span className="text-primary">.</span>
+            98 EVENTS<span className="text-primary">.</span>
           </a>
         </Link>
 
@@ -52,12 +51,6 @@ export function Navbar() {
               </a>
             </Link>
           ))}
-          <Button
-            variant="ghost"
-            className="text-sm font-medium text-black hover:text-gray-600 px-0 h-auto"
-          >
-            BOOK EVENT
-          </Button>
         </div>
 
         {/* Mobile Toggle */}
