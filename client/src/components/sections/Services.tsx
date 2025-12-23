@@ -34,6 +34,34 @@ const services = [
     image: fashionImg,
     colSpan: "md:col-span-2",
   },
+  {
+    id: "05",
+    title: "Sports Events",
+    description: "Championship ceremonies, opening ceremonies, and sports galas with dynamic energy and excitement.",
+    image: concertImg,
+    colSpan: "md:col-span-1",
+  },
+  {
+    id: "06",
+    title: "Exhibitions & Trade Shows",
+    description: "Booth designs and exhibition spaces that maximize engagement and brand visibility.",
+    image: corporateImg,
+    colSpan: "md:col-span-1",
+  },
+  {
+    id: "07",
+    title: "Private Celebrations",
+    description: "Birthday parties, anniversaries, and milestone celebrations crafted with personal touch.",
+    image: traditionalImg,
+    colSpan: "md:col-span-1",
+  },
+  {
+    id: "08",
+    title: "Virtual & Hybrid Events",
+    description: "Seamless online experiences and hybrid formats connecting global audiences.",
+    image: fashionImg,
+    colSpan: "md:col-span-2",
+  },
 ];
 
 export function Services() {
