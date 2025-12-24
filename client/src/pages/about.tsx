@@ -20,15 +20,15 @@ export default function AboutPage() {
                 Architects of <span className="text-gradient-primary">Experience</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Lumina Events was founded on a simple belief: that events shouldn't just be attended, they should be felt. We combine technical precision with boundless creativity to build worlds that captivate and inspire.
+                98 Events was founded on a simple belief: that events shouldn't just be attended, they should be felt. We combine technical precision with boundless creativity to build worlds that captivate and inspire.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
                 {[
                     { number: "10+", label: "Years Experience" },
-                    { number: "500+", label: "Events Executed" },
-                    { number: "50+", label: "Global Awards" }
+                    { number: "5000+", label: "Events Executed" },
+                    { number: "20+", label: "Global Awards" }
                 ].map((stat, i) => (
                     <motion.div 
                         key={i}
@@ -58,7 +58,7 @@ export default function AboutPage() {
                     <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent opacity-50" />
                      {/* Placeholder for team/office image */}
                     <div className="absolute inset-0 flex items-center justify-center text-foreground/20 font-display text-2xl font-bold">
-                        Lumina Studio
+                        98 Events Studio
                     </div>
                 </div>
             </div>

@@ -23,7 +23,7 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <span className="inline-block py-1 px-3 rounded-full bg-foreground/5 border border-foreground/10 text-xs font-medium tracking-widest uppercase text-primary mb-4 md:mb-6">
-            Premium Event Management
+            Event Management
           </span>
           <h1 className="text-3xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight text-foreground mb-4 md:mb-6 leading-tight">
             Crafting Moments <br />
@@ -38,12 +38,12 @@ export function Hero() {
             <Button 
               size="lg" 
               onClick={() => setIsModalOpen(true)}
-              className="rounded-full px-8 text-base bg-foreground text-background hover:bg-foreground/90 h-12 sm:w-auto cursor-pointer"
+              className="rounded-full px-8 text-base bg-foreground text-background hover:bg-foreground/90 h-12 w-[280px] sm:w-auto cursor-pointer"
             >
               Start Planning
             </Button>
             <Link href="/portfolio">
-              <Button variant="outline" size="lg" className="rounded-full px-8 text-base border-foreground/20 text-foreground hover:bg-foreground/10 h-12 group w-full sm:w-auto">
+              <Button variant="outline" size="lg" className="rounded-full px-8 text-base border-foreground/20 text-foreground hover:bg-foreground/10 h-12 group w-[280px] sm:w-auto">
                 View Portfolio <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>

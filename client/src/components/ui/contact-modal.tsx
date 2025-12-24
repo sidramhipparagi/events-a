@@ -36,7 +36,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
               {/* Header */}
               <div className="relative p-6 md:p-8 border-b border-border flex justify-between items-center">
                 <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
-                  Get in Touch
+                  Get in <span className="text-gradient-primary">Touch</span>
                 </h2>
                 <button
                   onClick={onClose}

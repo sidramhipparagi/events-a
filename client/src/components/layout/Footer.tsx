@@ -7,13 +7,28 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-6">
           <div className="flex gap-6">
             <Link href="/services">
-              <a className="text-muted-foreground hover:text-foreground transition-colors text-sm">Services</a>
+              <a 
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+              >
+                Services
+              </a>
             </Link>
             <Link href="/portfolio">
-              <a className="text-muted-foreground hover:text-foreground transition-colors text-sm">Portfolio</a>
+              <a 
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+              >
+                Portfolio
+              </a>
             </Link>
             <Link href="/about">
-              <a className="text-muted-foreground hover:text-foreground transition-colors text-sm">About</a>
+              <a 
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+              >
+                About
+              </a>
             </Link>
           </div>
           <div className="flex items-center gap-6">

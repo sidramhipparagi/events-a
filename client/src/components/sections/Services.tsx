@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "wouter";
 import corporateImg from "@assets/stock_images/modern_corporate_eve_9508c83f.jpg";
 import traditionalImg from "@assets/stock_images/luxury_traditional_i_dd2df4b0.jpg";
 import concertImg from "@assets/stock_images/concert_stage_with_c_2290e9d1.jpg";
@@ -75,9 +76,11 @@ export function Services() {
               We bring a multidisciplinary approach to every project, ensuring no detail is overlooked.
             </p>
           </div>
-          <button className="text-foreground hover:text-primary transition-colors flex items-center gap-2 font-medium">
-            View All Services <ArrowUpRight className="w-4 h-4" />
-          </button>
+          <Link href="/services">
+            <a className="text-foreground hover:text-primary transition-colors flex items-center gap-2 font-medium">
+              View All Services <ArrowUpRight className="w-4 h-4" />
+            </a>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
