@@ -95,7 +95,7 @@ export function Services() {
                 alt={service.title}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
               
               <div className="absolute bottom-0 left-0 p-8 w-full">
                 <span className="text-foreground/50 font-mono text-sm mb-2 block">{service.id}</span>
