@@ -38,7 +38,7 @@ export function Hero() {
             <Button 
               size="lg" 
               onClick={() => setIsModalOpen(true)}
-              className="rounded-full px-8 text-base bg-foreground text-background hover:bg-foreground/90 h-12 w-full sm:w-auto cursor-pointer"
+              className="rounded-full px-8 text-base bg-foreground text-background hover:bg-foreground/90 h-12 sm:w-auto cursor-pointer"
             >
               Start Planning
             </Button>
