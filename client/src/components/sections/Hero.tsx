@@ -1,9 +1,13 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
+import { ContactModal } from "@/components/ui/contact-modal";
 
 export function Hero() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className="relative py-24 md:min-h-screen md:flex md:items-center md:justify-center overflow-hidden pt-28 md:pt-20">
       {/* Background Elements */}
@@ -31,11 +35,13 @@ export function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/contact">
-              <Button size="lg" className="rounded-full px-8 text-base bg-foreground text-background hover:bg-foreground/90 h-12 w-full sm:w-auto">
-                Start Planning
-              </Button>
-            </Link>
+            <Button 
+              size="lg" 
+              onClick={() => setIsModalOpen(true)}
+              className="rounded-full px-8 text-base bg-foreground text-background hover:bg-foreground/90 h-12 w-full sm:w-auto cursor-pointer"
+            >
+              Start Planning
+            </Button>
             <Link href="/portfolio">
               <Button variant="outline" size="lg" className="rounded-full px-8 text-base border-foreground/20 text-foreground hover:bg-foreground/10 h-12 group w-full sm:w-auto">
                 View Portfolio <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -44,6 +50,9 @@ export function Hero() {
           </div>
         </motion.div>
       </div>
+
+      {/* Contact Modal */}
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       
       {/* Scroll Indicator - Hidden on Mobile */}
       <motion.div 
