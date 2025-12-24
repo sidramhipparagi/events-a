@@ -98,11 +98,11 @@ export function Services() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
               
               <div className="absolute bottom-0 left-0 p-8 w-full">
-                <span className="text-foreground/50 font-mono text-sm mb-2 block">{service.id}</span>
-                <h3 className="text-2xl font-display font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                <span className="text-white/50 font-mono text-sm mb-2 block">{service.id}</span>
+                <h3 className="text-2xl font-display font-bold text-white mb-2 group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-foreground/70 line-clamp-2 group-hover:text-foreground transition-colors">
+                <p className="text-white/70 line-clamp-2 group-hover:text-white transition-colors">
                   {service.description}
                 </p>
               </div>
