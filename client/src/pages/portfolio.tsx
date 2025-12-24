@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 import { motion } from "framer-motion";
 import corporateImg from "@assets/stock_images/modern_corporate_eve_9508c83f.jpg";
 import traditionalImg from "@assets/stock_images/luxury_traditional_i_dd2df4b0.jpg";
@@ -101,16 +102,7 @@ export default function PortfolioPage() {
         </section>
       </main>
       
-      <footer className="py-12 border-t border-border bg-background">
-        <div className="container mx-auto px-8 md:px-16 lg:px-24 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-muted-foreground text-sm">© 2024 Lumina Events. All rights reserved.</p>
-          <div className="flex gap-6">
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Instagram</a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">LinkedIn</a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Twitter</a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
