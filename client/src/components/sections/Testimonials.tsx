@@ -139,8 +139,8 @@ export function Testimonials() {
                 onClick={() => goToSlide(index)}
                 className={`rounded-full transition-all ${
                   index === currentIndex
-                    ? "bg-foreground/60 w-8 h-3"
-                    : "bg-foreground/20 w-3 h-3 hover:bg-foreground/40"
+                    ? "bg-foreground/60 w-3 h-1.5"
+                    : "bg-foreground/20 w-1.5 h-1.5 hover:bg-foreground/40"
                 }`}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
