@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -43,6 +43,15 @@ const testimonials: Testimonial[] = [
 
 export function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Auto-play carousel every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const goToPrevious = () => {
     setCurrentIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
@@ -130,7 +139,7 @@ export function Testimonials() {
                 onClick={() => goToSlide(index)}
                 className={`rounded-full transition-all ${
                   index === currentIndex
-                    ? "bg-primary w-8 h-3"
+                    ? "bg-foreground/60 w-8 h-3"
                     : "bg-foreground/20 w-3 h-3 hover:bg-foreground/40"
                 }`}
                 whileHover={{ scale: 1.1 }}
