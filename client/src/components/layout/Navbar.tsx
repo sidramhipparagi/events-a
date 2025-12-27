@@ -25,7 +25,7 @@ export function Navbar() {
         <Link href="/">
           <a className="flex items-center gap-2">
             <img 
-              src="/logo_web.png" 
+              src="/logo_png.png" 
               alt="98 Events" 
               className="h-8 md:h-10 w-auto object-contain"
               onError={(e) => {

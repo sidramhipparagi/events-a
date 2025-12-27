@@ -51,7 +51,7 @@ export function Footer() {
               </a>
             </div>
             <img 
-              src="/logo_web.png" 
+              src="/logo_png.png" 
               alt="98 Events" 
               className="h-8 w-auto object-contain ml-4"
               onError={(e) => {
