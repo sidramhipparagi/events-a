@@ -10,29 +10,33 @@ const services = [
     id: "01",
     title: "Corporate Events",
     description: "Product launches, conferences, and gala dinners executed with precision and brand alignment.",
-    image: "/images/corporate.png",
+    image: corporateImg,
     colSpan: "md:col-span-2",
+    href: "/services/corporate-events",
   },
   {
     id: "02",
     title: "Traditional Ceremonies",
     description: "Weddings and cultural celebrations honored with authentic detail and modern luxury.",
-    image: "/images/traditional.png",
+    image: traditionalImg,
     colSpan: "md:col-span-1",
+    href: "/services/traditional-ceremonies",
   },
   {
     id: "03",
-    title: "Weddings",
-    description: "Elegant and memorable wedding celebrations crafted with attention to detail and personalized touches.",
-    image: "/images/wedding.png",
+    title: "Entertainment & Sets",
+    description: "Concerts, award shows, and serial sets designed for maximum visual impact.",
+    image: concertImg,
     colSpan: "md:col-span-1",
+    href: "/services/entertainment-sets",
   },
   {
     id: "04",
     title: "Private Celebrations",
     description: "Birthday parties, anniversaries, and milestone celebrations crafted with personal touch.",
-    image: "/images/private.png",
+    image: traditionalImg,
     colSpan: "md:col-span-1",
+    href: "/services/private-celebrations",
   },
 ];
 
@@ -62,14 +66,14 @@ export function Services({ showViewAllButton = true }: ServicesProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <motion.div
-              key={service.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className={`group relative h-[400px] rounded-lg overflow-hidden cursor-pointer ${service.colSpan}`}
-            >
+            <Link key={service.id} href={service.href}>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className={`group relative h-[400px] rounded-lg overflow-hidden cursor-pointer ${service.colSpan}`}
+              >
               <img
                 src={service.image}
                 alt={service.title}
@@ -86,7 +90,8 @@ export function Services({ showViewAllButton = true }: ServicesProps) {
                   {service.description}
                 </p>
               </div>
-            </motion.div>
+              </motion.div>
+            </Link>
           ))}
         </div>
       </div>
