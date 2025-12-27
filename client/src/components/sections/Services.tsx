@@ -4,7 +4,6 @@ import { Link } from "wouter";
 import corporateImg from "@assets/stock_images/modern_corporate_eve_9508c83f.jpg";
 import traditionalImg from "@assets/stock_images/luxury_traditional_i_dd2df4b0.jpg";
 import concertImg from "@assets/stock_images/concert_stage_with_c_2290e9d1.jpg";
-import fashionImg from "@assets/stock_images/fashion_show_runway__03fabf6d.jpg";
 
 const services = [
   {
