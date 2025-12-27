@@ -11,7 +11,7 @@ import PortfolioPage from "@/pages/portfolio";
 import AboutPage from "@/pages/about";
 import CorporateEventsPage from "@/pages/corporate-events";
 import TraditionalCeremoniesPage from "@/pages/traditional-ceremonies";
-import EntertainmentSetsPage from "@/pages/entertainment-sets";
+import WeddingsPage from "@/pages/weddings";
 import PrivateCelebrationsPage from "@/pages/private-celebrations";
 
 // Get base path from environment or default to "/"
@@ -39,7 +39,7 @@ function AppRouter() {
         <Route path="/about" component={AboutPage} />
         <Route path="/services/corporate-events" component={CorporateEventsPage} />
         <Route path="/services/traditional-ceremonies" component={TraditionalCeremoniesPage} />
-        <Route path="/services/entertainment-sets" component={EntertainmentSetsPage} />
+        <Route path="/services/weddings" component={WeddingsPage} />
         <Route path="/services/private-celebrations" component={PrivateCelebrationsPage} />
         <Route component={NotFound} />
       </Switch>

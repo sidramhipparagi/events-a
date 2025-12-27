@@ -5,36 +5,35 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
 import { ContactModal } from "@/components/ui/contact-modal";
-import concertImg from "@assets/stock_images/concert_stage_with_c_2290e9d1.jpg";
 
-export default function EntertainmentSetsPage() {
+export default function WeddingsPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const features = [
-    "Concert stages with professional sound systems",
-    "Award show production with technical excellence",
-    "Serial set design and execution",
-    "Lighting design and special effects",
-    "Video production and projection mapping",
-    "Artist coordination and live performance management"
+    "Elegant ceremony design and setup",
+    "Reception planning with personalized themes",
+    "Floral arrangements and décor coordination",
+    "Photography and videography services",
+    "Catering and menu planning",
+    "Guest management and hospitality services"
   ];
 
   const benefits = [
     {
-      title: "Technical Mastery",
-      description: "State-of-the-art equipment and skilled technicians ensuring pristine audio, visual, and lighting quality"
+      title: "Personalized Experience",
+      description: "Every wedding is unique. We craft bespoke celebrations that reflect your love story and personal style"
     },
     {
-      title: "Creative Direction",
-      description: "Innovative stage design that transforms venues and creates unforgettable visual experiences"
+      title: "Attention to Detail",
+      description: "From the smallest décor element to the grandest moment, we ensure perfection in every aspect"
     },
     {
-      title: "Artist Management",
-      description: "Professional coordination of talent, ensuring smooth logistics and stellar performances"
+      title: "Stress-Free Planning",
+      description: "Our expert team handles all logistics, coordination, and execution so you can enjoy your special day"
     },
     {
-      title: "Audience Connection",
-      description: "Create immersive experiences that captivate and energize audiences from start to finish"
+      title: "Unforgettable Memories",
+      description: "Create magical moments that you and your loved ones will treasure for a lifetime"
     }
   ];
 
@@ -46,8 +45,8 @@ export default function EntertainmentSetsPage() {
         <section className="relative py-24 md:py-40 overflow-hidden pt-32">
           <div className="absolute inset-0 z-0">
             <img 
-              src={concertImg} 
-              alt="Entertainment & Sets" 
+              src="/images/wedding.png" 
+              alt="Weddings" 
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
@@ -60,21 +59,21 @@ export default function EntertainmentSetsPage() {
               transition={{ duration: 0.8 }}
             >
               <span className="inline-block py-1 px-3 rounded-full bg-foreground/10 border border-foreground/20 text-xs font-medium tracking-widest uppercase text-foreground/80 mb-4 md:mb-6">
-                Entertainment Excellence
+                Wedding Excellence
               </span>
               <h1 className="text-4xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight text-white mb-6 leading-tight">
-                Entertainment & Sets <br />
-                <span className="text-gradient-primary">That Captivate</span>
+                Elegant Weddings <br />
+                <span className="text-gradient-primary">Beyond Imagination</span>
               </h1>
               <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-10 leading-relaxed">
-                From intimate concerts to grand award shows, we design and execute entertainment experiences with technical mastery and creative vision that mesmerize audiences.
+                From intimate ceremonies to grand celebrations, we design and execute wedding experiences with meticulous attention to detail and personalized touches that make your special day truly unforgettable.
               </p>
               <Button 
                 size="lg" 
                 onClick={() => setIsModalOpen(true)}
                 className="rounded-full px-8 text-base bg-foreground text-background hover:bg-foreground/90 h-12 sm:w-auto cursor-pointer"
               >
-                Bring Your Vision to Life
+                Plan Your Dream Wedding
               </Button>
             </motion.div>
           </div>
@@ -90,10 +89,10 @@ export default function EntertainmentSetsPage() {
               className="mb-16"
             >
               <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-4">
-                Our Expertise
+                Our Wedding Services
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl">
-                Complete entertainment production with cutting-edge technology and artistic excellence
+                Complete wedding planning and execution with elegance and precision
               </p>
             </motion.div>
 
@@ -128,7 +127,7 @@ export default function EntertainmentSetsPage() {
                 Why Choose 98 Events
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl">
-                Transform your entertainment event into an unforgettable spectacle
+                Transform your wedding into an elegant celebration of love
               </p>
             </motion.div>
 
@@ -163,10 +162,10 @@ export default function EntertainmentSetsPage() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-6">
-                Ready to Create Magic?
+                Ready to Begin Your Journey?
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                Let's discuss your entertainment event and create an experience that audiences will remember for years to come.
+                Let's discuss your dream wedding and create an experience that celebrates your love story beautifully.
               </p>
               <Button 
                 size="lg" 
@@ -185,3 +184,4 @@ export default function EntertainmentSetsPage() {
     </div>
   );
 }
+

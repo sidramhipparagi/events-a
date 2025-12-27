@@ -1,16 +1,13 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "wouter";
-import corporateImg from "@assets/stock_images/modern_corporate_eve_9508c83f.jpg";
-import traditionalImg from "@assets/stock_images/luxury_traditional_i_dd2df4b0.jpg";
-import concertImg from "@assets/stock_images/concert_stage_with_c_2290e9d1.jpg";
 
 const services = [
   {
     id: "01",
     title: "Corporate Events",
     description: "Product launches, conferences, and gala dinners executed with precision and brand alignment.",
-    image: corporateImg,
+    image: "/images/corporate.png",
     colSpan: "md:col-span-2",
     href: "/services/corporate-events",
   },
@@ -18,23 +15,23 @@ const services = [
     id: "02",
     title: "Traditional Ceremonies",
     description: "Weddings and cultural celebrations honored with authentic detail and modern luxury.",
-    image: traditionalImg,
+    image: "/images/traditional.png",
     colSpan: "md:col-span-1",
     href: "/services/traditional-ceremonies",
   },
   {
     id: "03",
-    title: "Entertainment & Sets",
-    description: "Concerts, award shows, and serial sets designed for maximum visual impact.",
-    image: concertImg,
+    title: "Weddings",
+    description: "Elegant and memorable wedding celebrations crafted with attention to detail and personalized touches.",
+    image: "/images/wedding.png",
     colSpan: "md:col-span-1",
-    href: "/services/entertainment-sets",
+    href: "/services/weddings",
   },
   {
     id: "04",
     title: "Private Celebrations",
     description: "Birthday parties, anniversaries, and milestone celebrations crafted with personal touch.",
-    image: traditionalImg,
+    image: "/images/private.png",
     colSpan: "md:col-span-1",
     href: "/services/private-celebrations",
   },

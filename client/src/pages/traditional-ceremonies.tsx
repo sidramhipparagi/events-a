@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
 import { ContactModal } from "@/components/ui/contact-modal";
-import traditionalImg from "@assets/stock_images/luxury_traditional_i_dd2df4b0.jpg";
 
 export default function TraditionalCeremoniesPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -46,7 +45,7 @@ export default function TraditionalCeremoniesPage() {
         <section className="relative py-24 md:py-40 overflow-hidden pt-32">
           <div className="absolute inset-0 z-0">
             <img 
-              src={traditionalImg} 
+              src="/images/traditional.png" 
               alt="Traditional Ceremonies" 
               className="w-full h-full object-cover"
             />

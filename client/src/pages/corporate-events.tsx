@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
 import { ContactModal } from "@/components/ui/contact-modal";
-import corporateImg from "@assets/stock_images/modern_corporate_eve_9508c83f.jpg";
 
 export default function CorporateEventsPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -46,7 +45,7 @@ export default function CorporateEventsPage() {
         <section className="relative py-24 md:py-40 overflow-hidden pt-32">
           <div className="absolute inset-0 z-0">
             <img 
-              src={corporateImg} 
+              src="/images/corporate.png" 
               alt="Corporate Events" 
               className="w-full h-full object-cover"
             />
