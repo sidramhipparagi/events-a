@@ -19,7 +19,7 @@ export default function ServicesPage() {
               We bring a multidisciplinary approach to every project, ensuring no detail is overlooked and every moment is unforgettable.
             </p>
           </div>
-          <Services />
+          <Services showViewAllButton={false} />
         </section>
       </main>
       

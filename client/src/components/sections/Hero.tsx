@@ -21,6 +21,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
+          className="pt-8 md:pt-12"
         >
           <span className="inline-block py-1 px-3 rounded-full bg-foreground/5 border border-foreground/10 text-xs font-medium tracking-widest uppercase text-primary mb-4 md:mb-6">
             Event Management
@@ -53,17 +54,6 @@ export function Hero() {
 
       {/* Contact Modal */}
       <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-      
-      {/* Scroll Indicator - Hidden on Mobile */}
-      <motion.div 
-        className="hidden md:flex absolute bottom-10 left-1/2 -translate-x-1/2 text-foreground/30"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-      >
-        <div className="w-6 h-10 border-2 border-current rounded-full flex justify-center p-2">
-          <div className="w-1 h-1 bg-current rounded-full" />
-        </div>
-      </motion.div>
     </section>
   );
 }

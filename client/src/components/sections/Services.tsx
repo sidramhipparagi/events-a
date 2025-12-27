@@ -11,61 +11,37 @@ const services = [
     id: "01",
     title: "Corporate Events",
     description: "Product launches, conferences, and gala dinners executed with precision and brand alignment.",
-    image: corporateImg,
+    image: "/images/corporate.png",
     colSpan: "md:col-span-2",
   },
   {
     id: "02",
     title: "Traditional Ceremonies",
     description: "Weddings and cultural celebrations honored with authentic detail and modern luxury.",
-    image: traditionalImg,
+    image: "/images/traditional.png",
     colSpan: "md:col-span-1",
   },
   {
     id: "03",
-    title: "Entertainment & Sets",
-    description: "Concerts, award shows, and serial sets designed for maximum visual impact.",
-    image: concertImg,
+    title: "Weddings",
+    description: "Elegant and memorable wedding celebrations crafted with attention to detail and personalized touches.",
+    image: "/images/wedding.png",
     colSpan: "md:col-span-1",
   },
   {
     id: "04",
-    title: "Fashion & Lifestyle",
-    description: "Runway shows and brand activations that define trends and captivate audiences.",
-    image: fashionImg,
-    colSpan: "md:col-span-2",
-  },
-  {
-    id: "05",
-    title: "Sports Events",
-    description: "Championship ceremonies, opening ceremonies, and sports galas with dynamic energy and excitement.",
-    image: concertImg,
-    colSpan: "md:col-span-1",
-  },
-  {
-    id: "06",
-    title: "Exhibitions & Trade Shows",
-    description: "Booth designs and exhibition spaces that maximize engagement and brand visibility.",
-    image: corporateImg,
-    colSpan: "md:col-span-1",
-  },
-  {
-    id: "07",
     title: "Private Celebrations",
     description: "Birthday parties, anniversaries, and milestone celebrations crafted with personal touch.",
-    image: traditionalImg,
+    image: "/images/private.png",
     colSpan: "md:col-span-1",
-  },
-  {
-    id: "08",
-    title: "Virtual & Hybrid Events",
-    description: "Seamless online experiences and hybrid formats connecting global audiences.",
-    image: fashionImg,
-    colSpan: "md:col-span-2",
   },
 ];
 
-export function Services() {
+interface ServicesProps {
+  showViewAllButton?: boolean;
+}
+
+export function Services({ showViewAllButton = true }: ServicesProps) {
   return (
     <section id="services" className="py-24 bg-background relative z-10">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
@@ -76,11 +52,13 @@ export function Services() {
               We bring a multidisciplinary approach to every project, ensuring no detail is overlooked.
             </p>
           </div>
-          <Link href="/services">
-            <a className="text-foreground hover:text-primary transition-colors flex items-center gap-2 font-medium">
-              View All Services <ArrowUpRight className="w-4 h-4" />
-            </a>
-          </Link>
+          {showViewAllButton && (
+            <Link href="/services">
+              <a className="text-foreground hover:text-primary transition-colors flex items-center gap-2 font-medium">
+                View All Services <ArrowUpRight className="w-4 h-4" />
+              </a>
+            </Link>
+          )}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
