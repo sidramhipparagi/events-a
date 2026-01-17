@@ -2,6 +2,8 @@ import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";
 import { createServer } from "http";
+import path from "path";
+import fs from "fs";
 
 const app = express();
 const httpServer = createServer(app);
@@ -61,6 +63,22 @@ app.use((req, res, next) => {
 
 (async () => {
   await registerRoutes(httpServer, app);
+
+  // Serve email_header.png at /client/public/email_header.png
+  app.get("/client/public/email_header.png", (req: Request, res: Response) => {
+    // Try development path first
+    const devPath = path.resolve(__dirname, "..", "client", "public", "email_header.png");
+    // Try production path (dist/public)
+    const prodPath = path.resolve(__dirname, "public", "email_header.png");
+    
+    if (fs.existsSync(devPath)) {
+      res.sendFile(devPath);
+    } else if (fs.existsSync(prodPath)) {
+      res.sendFile(prodPath);
+    } else {
+      res.status(404).json({ message: "Image not found" });
+    }
+  });
 
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
     const status = err.status || err.statusCode || 500;
